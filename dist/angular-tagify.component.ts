@@ -32,7 +32,7 @@ export class TagifyComponent implements AfterViewInit {
 
   constructor(private tagifyService: TagifyService) { }
 
-  @ViewChild('tagifyInputRef') tagifyInputRef: any;
+  @ViewChild('tagifyInputRef', { static: true }) tagifyInputRef: any;
 
   private tagify;
 
